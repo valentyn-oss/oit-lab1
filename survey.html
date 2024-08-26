@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> ЯДжун </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              ЯДжун
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Домашня</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> Про нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Сервіси</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="survey.html">Опитувальник</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Реєстрація</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Авторизація</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <!-- feedback section -->
+  <section class="feedback_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Залиште Ваші Враження</h2>
+      </div>
+      <form id="feedbackForm" class="feedback_form">
+        
+        <!-- Логін -->
+        <div class="form-group">
+          <label for="login">Логін:</label>
+          <input type="text" id="login" name="login" class="form-control" placeholder="Введіть логін" required>
+        </div>
+        
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Ваш Email:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="example@mail.com" required>
+        </div>
+        
+        <!-- Розширене текстове повідомлення -->
+        <div class="form-group">
+          <label for="comments">Ваші враження:</label>
+          <textarea id="comments" name="comments" class="form-control" rows="4" placeholder="Напишіть свої враження..." required></textarea>
+        </div>
+        
+        <!-- Випадний список -->
+        <div class="form-group">
+          <label for="experience">Оберіть Ваш досвід:</label>
+          <select id="experience" name="experience" class="form-control" required>
+            <option value="" disabled selected>Оберіть опцію</option>
+            <option value="beginner">Початківець</option>
+            <option value="intermediate">Середній рівень</option>
+            <option value="advanced">Просунутий</option>
+          </select>
+        </div>
+        
+        <!-- Група перемикачів -->
+        <div class="form-group">
+          <label>Рівень задоволення:</label>
+          <div>
+            <input type="radio" id="satisfaction1" name="satisfaction" value="1" required>
+            <label for="satisfaction1">1 - Дуже погано</label>
+          </div>
+          <div>
+            <input type="radio" id="satisfaction2" name="satisfaction" value="2">
+            <label for="satisfaction2">2 - Погано</label>
+          </div>
+          <div>
+            <input type="radio" id="satisfaction3" name="satisfaction" value="3">
+            <label for="satisfaction3">3 - Середньо</label>
+          </div>
+          <div>
+            <input type="radio" id="satisfaction4" name="satisfaction" value="4">
+            <label for="satisfaction4">4 - Добре</label>
+          </div>
+          <div>
+            <input type="radio" id="satisfaction5" name="satisfaction" value="5">
+            <label for="satisfaction5">5 - Відмінно</label>
+          </div>
+        </div>
+        
+        <!-- Група прапорців -->
+        <div class="form-group">
+          <label>Які з наступних аспектів Ви вважаєте важливими? (Виберіть всі, що підходять):</label>
+          <div>
+            <input type="checkbox" id="aspect1" name="aspects" value="quality">
+            <label for="aspect1">Якість матеріалів</label>
+          </div>
+          <div>
+            <input type="checkbox" id="aspect2" name="aspects" value="support">
+            <label for="aspect2">Підтримка менторів</label>
+          </div>
+          <div>
+            <input type="checkbox" id="aspect3" name="aspects" value="flexibility">
+            <label for="aspect3">Гнучкість навчання</label>
+          </div>
+          <div>
+            <input type="checkbox" id="aspect4" name="aspects" value="community">
+            <label for="aspect4">Спільнота</label>
+          </div>
+        </div>
+        
+        <!-- Кнопки -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Відправити</button>
+          <button type="reset" class="btn btn-secondary">Очистити</button>
+        </div>
+        
+      </form>
+      <div id="feedbackResponse" class="feedback_response mt-3"></div>
+    </div>
+  </section>
+  
+  <!-- end feedback section -->
+  
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
